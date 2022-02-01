@@ -1,0 +1,4 @@
+- link:
+    ~/.zshrc: shells/zsh/config/.zshrc
+    ~/.config/zsh/: 
+        path: shells/zsh/zsh/**

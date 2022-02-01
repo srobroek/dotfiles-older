@@ -25,7 +25,6 @@ done < "${META_DIR}/${PROFILES_DIR}/$1"
 
 shift
 
-
 for config in ${CONFIGS} ${@}; do
     echo -e "\nConfigure $config"
     # create temporary file

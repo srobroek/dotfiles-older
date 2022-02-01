@@ -3,6 +3,7 @@
         relink: true
         create: true
         force: true
+        glob: true        
     shell:
         stdout: true
         stderr: true
@@ -15,3 +16,4 @@
         force: true
     $HOME/.config:
         recursive: true
+
