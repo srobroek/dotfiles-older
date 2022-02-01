@@ -7,6 +7,12 @@
     shell:
         stdout: true
         stderr: true
+    brewfile:
+        stdout: true,
+    brew:
+        auto_bootstrap: true
+        stderr: False,
+        stdout: False,        
 
 - create:
     - $HOME/.config
