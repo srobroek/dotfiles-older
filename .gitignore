@@ -4,3 +4,13 @@ credentials.*
 .pkrvars.hcl
 *.pkrvars.hcl
 .nvimlog
+# Editors
+.vscode/
+# Trash
+.DS_Store
+Thumbs.db
+.terraform
+.terraform.tfstate*
+terraform.tfstate*
+# Sops
+.decrypted~*
