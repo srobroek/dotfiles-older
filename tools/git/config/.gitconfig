@@ -1,3 +1,10 @@
 [user]
 	email = s.robroek@vxsan.com
 	name = Sjors Robroek
+	signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAr40IbRBk5i/H/7BDX8XNAZFEjJpQ5nBI3zrj67m6XO
+[commit]
+	gpgsign = false
+[gpg]
+	format = ssh
+[tag]
+	gpgsign = true
