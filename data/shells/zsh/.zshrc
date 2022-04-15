@@ -2,7 +2,7 @@
 
 cd ~
 
-
+for conf in $HOME/.config/zsh/**/_*.zsh; source "${conf}"
 for conf in $HOME/.config/zsh/**/*.zsh; source "${conf}"
 unset conf
 
