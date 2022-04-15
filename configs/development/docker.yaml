@@ -1,5 +1,2 @@
-- brew:
-    - docker
-
 - cask:
     - docker
