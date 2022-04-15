@@ -1,0 +1,5 @@
+- brew:
+    - cookiecutter
+    - docker
+- cask:
+    - docker
