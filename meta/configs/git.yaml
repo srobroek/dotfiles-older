@@ -1,6 +1,0 @@
-- link:
-    ~/.gitconfig: tools/git/config/.gitconfig
-
-- brew:
-    - git
-    - git-flow

@@ -1,0 +1,10 @@
+- brew:
+    - cookiecutter
+    - pre-commit
+    - gcc
+    - age
+    - sops
+
+- link:
+    ~/.config/zsh/age/: 
+        path: data/development/age/*.zsh

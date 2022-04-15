@@ -1,0 +1,13 @@
+- tap:
+    - hashicorp/tap
+
+- brew:
+    - hashicorp/tap/terraform
+    - hashicorp/tap/terraform-ls
+    - cdktf
+
+- link:
+    ~/.config/zsh/terraform/: 
+        path: data/development/terraform/*.zsh
+
+
