@@ -1,0 +1,6 @@
+- link:
+    ~/.config/starship.toml: data/shells/starship/starship.toml
+    ~/.config/zsh/starship: data/shells/starship/zsh/**
+
+- brew:
+    - starship

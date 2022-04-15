@@ -1,6 +1,0 @@
-- link:
-    ~/.config/starship: shells/starship/config
-    ~/.config/zsh/: shells/starship/zsh/**
-
-- brew:
-    - starship

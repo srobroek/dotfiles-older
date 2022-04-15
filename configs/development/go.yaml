@@ -1,0 +1,7 @@
+- brew:
+  - go
+  - golangci-lint
+
+- link:
+    ~/.config/zsh/go/: 
+        path: data/development/go/*.zsh

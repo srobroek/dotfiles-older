@@ -1,0 +1,6 @@
+- link:
+    ~/.ssh/config: data/system/openssh/config/.config
+
+- brew:
+    - openssh
+

@@ -1,0 +1,10 @@
+shells/zsh
+shells/starship
+shells/bash
+development/git
+system/homebrew
+development/terraform
+system/openssh
+development/toolchain
+development/go
+development/docker

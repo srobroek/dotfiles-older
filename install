@@ -1,0 +1,48 @@
+#!/usr/bin/env zsh
+BASE_DIR=${0:a:h}
+PROFILES_DIR="profiles"
+DEFAULT_CONFIG="default"
+CONFIG_SUFFIX=".yaml"
+CONFIG_DIR="configs"
+DOTBOT_DIR="dotbot"
+DOTBOT_BIN="${BASE_DIR}/${DOTBOT_DIR}/bin/dotbot"
+SUDO_SUFFIX="-sudo"
+PROFILES=()
+PLUGINS=("dotbot-brew" "dotbot-git" "dotbot-vscode")
+ARGS=()
+RELDIR="./"
+cd $BASE_DIR
+
+for profile in ${@}; do
+    PROFILES+=(${PROFILES_DIR}/$profile)
+    #while read line; do CONFIGS+=($line); done <${PROFILES_DIR}/$profile
+done
+CONFIGS=($(sort -u $PROFILES))
+
+
+for config in $CONFIGS; do
+    echo -e "Configuring $config"
+    tmpfile=$(mktemp)
+    echo $tmpFile
+    cat "${BASE_DIR}/${CONFIG_DIR}/${DEFAULT_CONFIG}${CONFIG_SUFFIX}" >> $tmpfile
+    cat "${BASE_DIR}/${CONFIG_DIR}/${config}${CONFIG_SUFFIX}" >> $tmpfile
+    CMD=($DOTBOT_BIN)
+    for plugin in $PLUGINS; do 
+        ARGS+=(--plugin-dir "${plugin}")
+    done
+    ARGS+=(-d "${BASE_DIR}")
+    ARGS+=(-c "${tmpfile}")
+
+    if [[ $config == *"sudo"* ]]; then
+        cmd=(sudo $DOTBOT_BIN "${ARGS[@]}")
+    else 
+        cmd=($DOTBOT_BIN "${ARGS[@]}")
+    fi    
+    "${cmd[@]}"
+    rm -f "$configFile"
+
+
+
+
+    
+done

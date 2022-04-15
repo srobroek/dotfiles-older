@@ -1,6 +1,0 @@
-- link:
-    ~/.ssh/config: tools/openssh/config/.config
-
-- brew:
-    - openssh
-

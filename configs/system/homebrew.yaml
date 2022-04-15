@@ -1,0 +1,4 @@
+- link:
+    ~/.config/zsh/homebrew: data/system/homebrew/zsh/*.zsh
+
+

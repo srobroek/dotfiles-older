@@ -1,0 +1,6 @@
+- link:
+    ~/.gitconfig: data/development/git/.gitconfig
+
+- brew:
+    - git
+    - git-flow
